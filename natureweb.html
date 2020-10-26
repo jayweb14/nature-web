@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>some naturals</title>
+    <style>
+        body{
+            background-image: url(https://images.unsplash.com/flagged/photo-1554443883-83db889b4007?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);  
+            
+        
+        }
+        .container{
+            display: flex;
+            align-items: center;
+            position: sticky;
+            justify-content: center;
+            text-decoration: none;
+            
+            color: burlywood;
+        
+    
+            flex-direction: column;
+            height: 140px;
+        }
+        .container ul{
+            display: flex;
+        }
+        .container ul li{
+            cursor: pointer;
+            display: block;
+            padding: 14px 28px;
+        
+        }
+        #logo img{
+            height: 130px;
+            display: inline-block;
+        
+        }
+        #logo{
+            
+            justify-content: center;
+            align-items: center;
+            color: lightseagreen;
+            padding: 5px 5px;
+            margin:  10px 10px;
+    
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        #thought{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: powderblue;
+            font-family: cursive;
+            
+        }
+        .home h1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: seagreen;
+        }
+        .home{
+            color: pink;
+            
+        
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+         }
+         .about h1{ color:yellowgreen;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+
+         }
+         .about{
+             color: tomato;
+         }
+         #help{
+             
+             display: flex;
+             justify-content: center;
+             align-items: center;
+
+         }
+         #help h1{
+             color: turquoise;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+
+         }
+         .form-group{
+             margin:  5px 5px;
+             border: 2px solid black;
+             border-radius: 3px 3px;
+             padding: 5px 5px;
+             background-color: wheat;
+
+         }
+         .btm{
+             cursor: pointer;
+             background-color: thistle;
+        
+             border: 2px solid black;
+             border-radius: 14px 14px;
+         }
+         .center{
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             color: white;
+             background-color: black;
+             height: 30px;
+         }
+            
+
+    </style>
+</head>
+<body>
+    
+
+    <navbar id="logo">
+        <img src="data:image/png;base64,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" alt="nautureweb.com">
+        
+    </navbar>
+    <div id="thought">NATURE IS NOT A PLACE TO VISIT IT IS A HOME :)</div>
+
+    <div class="container">
+    
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>NatureStuff</li>
+            <li>Services</li>
+        </ul>
+    </div>
+    <section class="home">
+    <h1> What Is Nature For Us?</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, voluptatibus? Iste sint molestiae magnam, ratione sit esse ea? Maxime aliquid veritatis cupiditate eveniet minima pariatur doloribus, perspiciatis doloremque fugit inventore quaerat, repellat sunt dignissimos nihil expedita, beatae modi necessitatibus consectetur?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius sequi tempora ad architecto recusandae ex eos ipsum eaque, animi vitae consectetur vel dolore nobis dolorem, aperiam voluptatum voluptatem enim, laborum facere amet! Necessitatibus, molestiae.</p>
+    </section>
+    <section class="about">
+        <h1>What We Are Without Nature!</h1>
+        <br>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus autem ad est provident quasi, consequuntur sit qui harum, explicabo cum eveniet ab rerum repudiandae debitis, quaerat laborum obcaecati nobis expedita adipisci corporis! Earum dolore officia neque delectus ducimus molestias adipisci eveniet perferendis hic, laudantium minima animi accusamus culpa nam, esse, quis aliquam assumenda numquam exercitationem quas doloribus molestiae. Exercitationem asperiores dolorum eos ad, explicabo facilis repudiandae excepturi cum, itaque recusandae ut numquam aliquid dolorem! Assumenda rem obcaecati culpa quam laudantium modi expedita temporibus eius quae, ducimus ex recusandae ad aut debitis ut distinctio magnam, dolorem accusantium! Aliquam fugiat culpa repellendus.</p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos corporis molestias ea molestiae accusantium? Saepe voluptatibus facere quibusdam repellat sapiente! Ea aliquid cum amet, dicta commodi eveniet hic, quibusdam cumque eum rerum aspernatur sunt.
+    </section>
+    <section id="help">
+        <h1>HOW YOU CAN HELP TO SERVE YOUR NATURE:</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="whats yo name">
+            </div>
+             <div class="form-group">
+            <input type="text" Email="" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <input type="text" Amount="" placeholder="how much yoy wanna donate?">
+            </div>
+            <div class="form-group">
+                <input type="text" age="" placeholder="Enter your age">
+            
+            </div>
+            <div class="form-group">
+              whats your view on nature <br>  <textarea name=""  cols="30" rows="10"></textarea>
+            </div>
+            <button class="btm">Submit now</button>
+        </form>
+        
+    </section>
+    <br>
+    <footer>
+        <div class="center">
+            Copyright &copy; www.somenatural.com. All Rights Reserved!
+        </div>
+    </footer>
+    
+    
+</body>
+</html>
